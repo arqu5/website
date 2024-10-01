@@ -1,25 +1,321 @@
 <!DOCTYPE html>
-<html>
-	<head lang="eng">
+<html lang="en">
+	<head>
 		<meta charset="UTF-8">
-		<style>
-			html {
-				background: purple;
-			}
-		</style>
 		<title>arqus</title>
+		<!-- <link rel="stylesheet" href="./style.css"> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+		<!-- bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+		<style>
+			.gradient-background {
+				background: linear-gradient(300deg, blue, red, pink);
+				background-size: 180%, 180%;
+				animation: gradient-animation 18s ease infinite;
+
+				@keyframes gradient-animation {
+					0% {
+						background-position: 0% 50%;
+					}
+					50% {
+						background-position: 100% 50%;
+					}
+					100% {
+						background-position: 0% 50%;
+					}
+				}
+
+			}
+
+			#footer {
+				background-color: red;
+			}
+			
+		</style>
 
 	</head>
+
 	<body>
-		<h1>arqus</h1>
-		<img src="./assets/arqus.png" height="300"/>
-		<a href="https://www.google.com">Google</a>
-		
-		<p>
-			This is a paragraph, testing... testing...
-		</p>
-		<hr />
-		<a href="./public/about.html">About Me</a>
-		<a href="./public/contact.html">Contact Me</a>
+		<section id="title" class="gradient-background">
+			<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+			    <div class="col-md-6 p-lg-5 mx-auto my-5">
+			      <h1 class="display-3 fw-bold">TinDog</h1>
+			      <h3 class="fw-normal text-muted mb-3">Fuck all the dogs in the neighborhood with one click.</h3>
+			      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+			      	<svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-alipay" viewBox="0 0 16 16">
+					  <path d="M2.541 0H13.5a2.55 2.55 0 0 1 2.54 2.563v8.297c-.006 0-.531-.046-2.978-.813-.412-.14-.916-.327-1.479-.536q-.456-.17-.957-.353a13 13 0 0 0 1.325-3.373H8.822V4.649h3.831v-.634h-3.83V2.121H7.26c-.274 0-.274.273-.274.273v1.621H3.11v.634h3.875v1.136h-3.2v.634H9.99c-.227.789-.532 1.53-.894 2.202-2.013-.67-4.161-1.212-5.51-.878-.864.214-1.42.597-1.746.998-1.499 1.84-.424 4.633 2.741 4.633 1.872 0 3.675-1.053 5.072-2.787 2.08 1.008 6.37 2.738 6.387 2.745v.105A2.55 2.55 0 0 1 13.5 16H2.541A2.55 2.55 0 0 1 0 13.437V2.563A2.55 2.55 0 0 1 2.541 0"/>
+					  <path d="M2.309 9.27c-1.22 1.073-.49 3.034 1.978 3.034 1.434 0 2.868-.925 3.994-2.406-1.602-.789-2.959-1.353-4.425-1.207-.397.04-1.14.217-1.547.58Z"/>
+					</svg>
+			        <a class="icon-link" href="#">
+			          Learn more
+			          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+			        </a>
+			        <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-arrow-through-heart" viewBox="0 0 16 16">
+					  <path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l.53-.53c-.771-.802-1.328-1.58-1.704-2.32-.798-1.575-.775-2.996-.213-4.092C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182a22 22 0 0 1-2.685-2.062l-.539.54V14a.5.5 0 0 1-.146.354zm2.893-4.894A20.4 20.4 0 0 0 8 12.71c2.456-1.666 3.827-3.207 4.489-4.512.679-1.34.607-2.42.215-3.185-.817-1.595-3.087-2.054-4.346-.761L8 4.62l-.358-.368c-1.259-1.293-3.53-.834-4.346.761-.392.766-.464 1.845.215 3.185.323.636.815 1.33 1.519 2.065l1.866-1.867a.5.5 0 1 1 .708.708z"/>
+					</svg>
+			        <a class="icon-link" href="#">
+			          Sign Up
+			          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+			        </a>
+			      </div>
+			    </div>
+			    <div class="product-device shadow-sm d-none d-md-block"></div>
+			    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+			</div>
+		</section>
+
+		<section id="features">
+			<div class="container px-4 py-5" id="featured-3">
+			    <h2 class="pb-2 border-bottom">Features</h2>
+			    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+			      <div class="feature col">
+			        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+			          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+			        </div>
+			        <h3 class="fs-2 text-body-emphasis">Easy to Use</h3>
+			        <p>So easy to fuck all the dogs you want.</p>
+			        <a href="#" class="icon-link">
+			          Fuck dogs now
+			          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+			        </a>
+			      </div>
+			      <div class="feature col">
+			        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+			          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+			        </div>
+			        <h3 class="fs-2 text-body-emphasis">Elite Clientele</h3>
+			        <p>Only purebred doggies on this site, guaranteed.</p>
+			        <a href="#" class="icon-link">
+			          Fuck dogs now
+			          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+			        </a>
+			      </div>
+			      <div class="feature col">
+			        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+			          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+			        </div>
+			        <h3 class="fs-2 text-body-emphasis">Guaranteed To Work</h3>
+			        <p>Fuck three dogs tonight or your money back. Just kidding, this website is free.</p>
+			        <a href="#" class="icon-link">
+			          Fuck dogs now
+			          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+			        </a>
+			      </div>
+			    </div>
+			  </div>
+		</section>
+
+		<section id="testimonial">
+			<div class="px-4 py-5 my-5 text-center">
+			    <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+			    <h1 class="display-5 fw-bold text-body-emphasis">testimonial</h1>
+			    <div class="col-lg-6 mx-auto">
+			      <p class="lead mb-4">I was skeptical at first. Is this even legal? But man oh man was it worth the money. I will certainly be using this app again later today.</p>
+			      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+			        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Learn More</button>
+			        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Sign Up</button>
+			      </div>
+			    </div>
+			    <div class="container">
+			    	<div class="row">
+			    		<div class="col-sm-12 col-lg-3">
+			    			<img src="./assets/beluga.png" style="width: 100px; heigh: 100px">
+			    		</div>
+			    		<div class="col-sm-12 col-lg-3">
+			    			<img src="./assets/beluga.png" style="width: 100px; heigh: 100px">
+			    		</div>
+			    		<div class="col-sm-12 col-lg-3">
+			    			<img src="./assets/beluga.png" style="width: 100px; heigh: 100px">
+			    		</div>
+			    		<div class="col-sm-12 col-lg-3">
+			    			<img src="./assets/beluga.png" style="width: 100px; heigh: 100px">
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+		</section>
+
+		<section id="pricing">
+			<div class="container py-3">
+			  <header>
+			    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+			      <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+			        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>A plan for every dogfucker's needs.</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+			        <span class="fs-4">Pricing example</span>
+			      </a>
+
+			      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+			        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Features</a>
+			        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Enterprise</a>
+			        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Support</a>
+			        <a class="py-2 link-body-emphasis text-decoration-none" href="#">Pricing</a>
+			      </nav>
+			    </div>
+
+			    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+			      <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
+			      <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+			    </div>
+			  </header>
+
+			  <main>
+			    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+			      <div class="col">
+			        <div class="card mb-4 rounded-3 shadow-sm">
+			          <div class="card-header py-3">
+			            <h4 class="my-0 fw-normal">Free</h4>
+			          </div>
+			          <div class="card-body">
+			            <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+			            <ul class="list-unstyled mt-3 mb-4">
+			              <li>10 users included</li>
+			              <li>2 GB of storage</li>
+			              <li>Email support</li>
+			              <li>Help center access</li>
+			            </ul>
+			            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="col">
+			        <div class="card mb-4 rounded-3 shadow-sm">
+			          <div class="card-header py-3">
+			            <h4 class="my-0 fw-normal">Pro</h4>
+			          </div>
+			          <div class="card-body">
+			            <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+			            <ul class="list-unstyled mt-3 mb-4">
+			              <li>20 users included</li>
+			              <li>10 GB of storage</li>
+			              <li>Priority email support</li>
+			              <li>Help center access</li>
+			            </ul>
+			            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="col">
+			        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+			          <div class="card-header py-3 text-bg-primary border-primary">
+			            <h4 class="my-0 fw-normal">Enterprise</h4>
+			          </div>
+			          <div class="card-body">
+			            <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+			            <ul class="list-unstyled mt-3 mb-4">
+			              <li>30 users included</li>
+			              <li>15 GB of storage</li>
+			              <li>Phone and email support</li>
+			              <li>Help center access</li>
+			            </ul>
+			            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+
+			    <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+			    <div class="table-responsive">
+			      <table class="table text-center">
+			        <thead>
+			          <tr>
+			            <th style="width: 34%;"></th>
+			            <th style="width: 22%;">Free</th>
+			            <th style="width: 22%;">Pro</th>
+			            <th style="width: 22%;">Enterprise</th>
+			          </tr>
+			        </thead>
+			        <tbody>
+			          <tr>
+			            <th scope="row" class="text-start">Public</th>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			          </tr>
+			          <tr>
+			            <th scope="row" class="text-start">Private</th>
+			            <td></td>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			          </tr>
+			        </tbody>
+
+			        <tbody>
+			          <tr>
+			            <th scope="row" class="text-start">Permissions</th>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			          </tr>
+			          <tr>
+			            <th scope="row" class="text-start">Sharing</th>
+			            <td></td>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			          </tr>
+			          <tr>
+			            <th scope="row" class="text-start">Unlimited members</th>
+			            <td></td>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			          </tr>
+			          <tr>
+			            <th scope="row" class="text-start">Extra security</th>
+			            <td></td>
+			            <td></td>
+			            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+			          </tr>
+			        </tbody>
+			      </table>
+			    </div>
+			  </main>
+		</section>
+
+		<section id="footer" class="gradient-background">
+			<footer class="pt-4">
+			    <div class="row">
+			      <div class="col-12 col-md">
+			        <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+			        <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
+			      </div>
+			      <div class="col-6 col-md">
+			        <h5>Features</h5>
+			        <ul class="list-unstyled text-small">
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+			        </ul>
+			      </div>
+			      <div class="col-6 col-md">
+			        <h5>Resources</h5>
+			        <ul class="list-unstyled text-small">
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+			        </ul>
+			      </div>
+			      <div class="col-6 col-md">
+			        <h5>About</h5>
+			        <ul class="list-unstyled text-small">
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+			          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+			        </ul>
+			      </div>
+			    </div>
+			</footer>
+		</section>
+
+		<!-- bootstrap -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	</body>
 </html>
